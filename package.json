@@ -1,0 +1,31 @@
+{
+  "name": "resilient-walkme-website",
+  "version": "1.0.0",
+  "description": "Website for the revolutionary WalkMe, by Resilient Innovation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agilitation/walkme-website.git"
+  },
+  "author": "Romain Bessuges-Meusy <romain@agilitation.fr>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agilitation/walkme-website/issues"
+  },
+  "homepage": "https://github.com/agilitation/walkme-website#readme",
+  "dependencies": {
+    "d3-dsv": "^1.0.7",
+    "gulp": "latest",
+    "gulp-concat": "^2.6.1",
+    "gulp-replace": "latest",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.2",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^3.9.0"
+  }
+}

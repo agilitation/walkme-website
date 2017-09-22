@@ -1,0 +1,8 @@
+{
+    "name": "agilitation/walkmebyresilient-website",
+    "type": "project",
+    "require": {
+        "zendesk/zendesk_api_client_php": "^2.2"
+    },
+    "minimum-stability": "dev"
+}

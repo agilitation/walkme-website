@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{page_locale}}">
 <head>
     <meta charset="UTF-8">
     <title>{{fenetre_titre}}</title>
-    <link rel="stylesheet" href="bundle.css">
+    <link rel="stylesheet" href="bundle.css?v=2017.09.29-1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="{{openGraph_titre}}"/>
     <meta property="og:type" content="website"/>
@@ -13,9 +13,11 @@
     <meta property="og:locale" content="{{openGraph_locale}}"/>
     <meta property="og:video" content="{{openGraph_video_url}}"/>
     <meta name="description" content="{{meta_description}}">
+    <meta name="keywords" content="{{meta_keywords}}">
 
 </head>
 <body>
+<div id="reload">↻</div>
 <header class="main">
     <h1>
         <a href="#"><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-Sy4Lb8MiZ.png" alt="WalkMe Logo"></a>
@@ -40,61 +42,135 @@
 </header>
 <section class="hero">
     <div>
-        <div id="video-container">
-            <iframe width="900" height="506"
-                    src="{{accueil_video_url}}"
-                    frameborder="0"
-                    allowfullscreen></iframe>
-        </div>
-        <!--
-        <div id="video-container">
-            <video width="100%"  loop id="background-video">
-                <source src="assets/walk.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>-->
         <div class="content">
-            <!--<div id="video">-->
-            <!--<iframe width="100%" height="400" src="https://www.youtube.com/embed/a4a_BgwZNr0" frameborder="0"-->
-            <!--allowfullscreen></iframe>-->
-            <!--</div>-->
             <div class="text">
-                <!-- todo typewriter effect -->
                 <h1>{{accueil_titre}}</h1>
                 <p>{{accueil_texte}}</p>
             </div>
+        </div>
+        <div id="video-container">
+            <div id="video-embed"></div>
+        </div>
             <div class="cta">
                 <a href="#{{menu_href_sra}}" class="button">{{accueil_cta_sra}}</a>
                 <a href="#{{menu_href_essayer}}" class="button try">{{cta_essayer}}</a>
             </div>
-        </div>
     </div>
 </section>
 <section class="partners">
     <h2>{{partenaires_presse}}</h2>
     <div class="rewiews-citations">
-        <a href="{{presse_1_url}}">
+        <a href="{{presse_1_url}}" target="_blank">
             <article>
-                <blockquote>{{presse_1_citation}}</blockquote>
                 <h1><img src="{{presse_1_img_src}}" alt="{{presse_1_img_alt}}"/></h1>
+                <blockquote>{{presse_1_citation}}</blockquote>
             </article>
         </a>
-        <a href="{{presse_2_url}}">
+        <a href="{{presse_2_url}}" target="_blank">
             <article>
-                <blockquote>{{presse_2_citation}}</blockquote>
                 <h1><img src="{{presse_2_img_src}}" alt="{{presse_2_img_alt}}"/></h1>
+                <blockquote>{{presse_2_citation}}</blockquote>
             </article>
         </a>
-        <a href="{{presse_3_url}}">
+        <a href="{{presse_3_url}}" target="_blank">
             <article>
-                <blockquote>{{presse_3_citation}}</blockquote>
                 <h1><img src="{{presse_3_img_src}}" alt="{{presse_3_img_alt}}"/></h1>
+                <blockquote>{{presse_3_citation}}</blockquote>
             </article>
         </a>
     </div>
+    <div class="cta">
+        <a href="#{{menu_href_presse}}" class="button" target="_blank">{{presse_cta_ensavoirplus}}</a>
+        <a href="#{{menu_href_essayer}}" class="button try">{{cta_essayer}}</a>
+    </div>
+
     <div class="other-reviews">
-        <div><img src="assets/logos/presse/midi_libre.png" alt="{{partenaires_presse_midilibre_alt}}"/></div>
-        <div><img src="assets/logos/presse/connexionfrance.jpg" alt="{{partenaires_presse_connexion_alt}}"/></div>
+        <div><a href="{{presse_4_url}}"><img src="{{presse_4_img_src}}" alt="{{presse_4_img_alt}}"/></a></div>
+        <div><a href="{{presse_5_url}}"><img src="{{presse_5_img_src}}" alt="{{presse_5_img_alt}}"/></a></div>
+        <div><a href="{{presse_6_url}}"><img src="{{presse_6_img_src}}" alt="{{presse_6_img_alt}}"/></a></div>
+    </div>
+</section>
+<section class="testimonials" id="{{menu_href_temoignages}}">
+    <div>
+        <h1>{{temoignages_titre}}</h1>
+        <h2>{{temoignages_soustitre}}</h2>
+        <div class="blocks">
+            <a href="{{temoignages_1_url}}" target="_blank">
+                <article class="testimonial">
+                    <div class="container">
+                        <img src="{{temoignages_1_image}}" alt="{{temoignages_1_image_alt}}">
+                    </div>
+                    <div class="text">
+                        <h1>{{temoignages_1_titre}}</h1>
+                        <p>{{temoignages_1_texte}}</p>
+                    </div>
+                </article>
+            </a>
+            <a href="{{temoignages_2_url}}" target="_blank">
+                <article class="testimonial">
+                    <div class="container">
+                        <img src="{{temoignages_2_image}}" alt="{{temoignages_2_image_alt}}">
+                    </div>
+                    <div class="text">
+                        <h1>{{temoignages_2_titre}}</h1>
+                        <p>{{temoignages_2_texte}}</p>
+                    </div>
+                </article>
+            </a>
+            <a href="{{temoignages_3_url}}" target="_blank">
+                <article class="testimonial">
+                    <div class="container">
+                        <img src="{{temoignages_3_image}}" alt="{{temoignages_3_image_alt}}">
+                    </div>
+                    <div class="text">
+                        <h1>{{temoignages_3_titre}}</h1>
+                        <p>{{temoignages_3_texte}}</p>
+                    </div>
+                </article>
+            </a>
+        </div>
+
+        <div class="cta">
+            <a href="#{{menu_href_boitier}}" class="button">{{cta_boitier}}</a>
+            <a href="#{{menu_href_essayer}}" class="button try">{{cta_essayer}}</a>
+        </div>
+    </div>
+</section>
+<section id="presse-concours" class="partners">
+    <div>
+        <h2>{{partenaires_recompenses}}</h2>
+        <div class="recompenses items">
+            <a href="{{recompenses_1_url}}">
+                <article>
+                    <div><img src="{{recompenses_1_image}}" alt="{{recompenses_1_alt}}"/></div>
+                    <span>{{recompenses_1_titre}}</span>
+                </article>
+            </a>
+            <a href="{{recompenses_2_url}}">
+                <article>
+                    <div><img src="{{recompenses_2_image}}" alt="{{recompenses_2_alt}}"/></div>
+                    <span>{{recompenses_2_titre}}</span>
+                </article>
+            </a>
+            <a href="{{recompenses_3_url}}">
+                <article>
+                    <div><img src="{{recompenses_3_image}}" alt="{{recompenses_3_alt}}"/></div>
+                    <span>{{recompenses_3_titre}}</span>
+                </article>
+            </a>
+            <a href="{{recompenses_4_url}}">
+                <article>
+                    <div><img src="{{recompenses_4_image}}" alt="{{recompenses_4_alt}}"/></div>
+                    <span>{{recompenses_4_titre}}</span>
+                </article>
+            </a>
+            <a href="{{recompenses_5_url}}">
+                <article>
+                    <div><img src="{{recompenses_5_image}}" alt="{{recompenses_5_alt}}"/></div>
+                    <span>{{recompenses_5_titre}}</span>
+                </article>
+            </a>
+        </div>
     </div>
 </section>
 <section class="sra" id="{{menu_href_sra}}">
@@ -121,52 +197,6 @@
         </div>
     </div>
 </section>
-<section class="testimonials" id="{{menu_href_temoignages}}">
-    <div>
-        <h1>{{temoignages_titre}}</h1>
-        <h2>{{temoignages_soustitre}}</h2>
-        <div class="blocks">
-            <a href="{{temoignages_1_url}}">
-                <article class="testimonial">
-                    <div class="container">
-                        <img src="{{temoignages_1_image}}" alt="{{temoignages_1_image_alt}}">
-                    </div>
-                    <div class="text">
-                        <h1>{{temoignages_1_titre}}</h1>
-                        <p>{{temoignages_1_texte}}</p>
-                    </div>
-                </article>
-            </a>
-            <a href="{{temoignages_2_url}}">
-                <article class="testimonial">
-                    <div class="container">
-                        <img src="{{temoignages_2_image}}" alt="{{temoignages_2_image_alt}}">
-                    </div>
-                    <div class="text">
-                        <h1>{{temoignages_2_titre}}</h1>
-                        <p>{{temoignages_2_texte}}</p>
-                    </div>
-                </article>
-            </a>
-            <a href="{{temoignages_3_url}}">
-                <article class="testimonial">
-                    <div class="container">
-                        <img src="{{temoignages_3_image}}" alt="{{temoignages_3_image_alt}}">
-                    </div>
-                    <div class="text">
-                        <h1>{{temoignages_3_titre}}</h1>
-                        <p>{{temoignages_3_texte}}</p>
-                    </div>
-                </article>
-            </a>
-        </div>
-
-        <div class="cta">
-            <a href="#{{menu_href_boitier}}" class="button">{{cta_boitier}}</a>
-            <a href="#{{menu_href_essayer}}" class="button try">{{cta_essayer}}</a>
-        </div>
-    </div>
-</section>
 <section class="specifications" id="{{menu_href_boitier}}">
     <div>
         <div class="text">
@@ -178,7 +208,6 @@
         </div>
     </div>
 </section>
-
 <section id="essayer" class="try">
     <div>
         <div>
@@ -190,6 +219,7 @@
             </div>
         </div>
         <aside class="order">
+            <h2>{{essayer_formulaire_titre}}</h2><!--
             <h2 class="choice">{{form_choix}}</h2>
             <div class="choices">
                 <div class="try">
@@ -204,13 +234,15 @@
                         {{form_choix_callback_details}}
                     </div>
                 </div>
+                <!--
                 <div class="credit">
                     <button data-title="Facilités de paiement" data-show=".horaires">{{form_choix_credit}}</button>
                     <div class="details">
                         {{form_choix_credit_details}}
                     </div>
                 </div>
-            </div>
+
+            </div>-->
             <div class="form">
                 <form action="#">
                     <input type="hidden" name="objet" id="objet-requete">
@@ -325,39 +357,66 @@
         </aside>
     </div>
 </section>
-<section id="presse-concours" class="partners">
+<section id="soutiens" class="partners">
     <div>
-        <h2>{{partenaires_recompenses}}</h2>
-        <a href="{{recompenses_1_url}}">
-            <article>
-                <div><img src="{{recompenses_1_image}}" alt="{{recompenses_1_alt}}"/></div>
-                <span>{{recompenses_1_titre}}</span>
-            </article>
-        </a>
-        <a href="{{recompenses_2_url}}">
-            <article>
-                <div><img src="{{recompenses_2_image}}" alt="{{recompenses_2_alt}}"/></div>
-                <span>{{recompenses_2_titre}}</span>
-            </article>
-        </a>
-        <a href="{{recompenses_3_url}}">
-            <article>
-                <div><img src="{{recompenses_3_image}}" alt="{{recompenses_3_alt}}"/></div>
-                <span>{{recompenses_3_titre}}</span>
-            </article>
-        </a>
-        <a href="{{recompenses_4_url}}">
-            <article>
-                <div><img src="{{recompenses_4_image}}" alt="{{recompenses_4_alt}}"/></div>
-                <span>{{recompenses_4_titre}}</span>
-            </article>
-        </a>
-        <a href="{{recompenses_5_url}}">
-            <article>
-                <div><img src="{{recompenses_5_image}}" alt="{{recompenses_5_alt}}"/></div>
-                <span>{{recompenses_5_titre}}</span>
-            </article>
-        </a>
+        <h2>{{partenaires_soutiens}}</h2>
+        <div class="soutiens items">
+            <a href="{{soutiens_1_url}}">
+                <article>
+                    <div><img src="{{soutiens_1_image}}" alt="{{soutiens_1_alt}}"/></div>
+                    <span>{{soutiens_1_titre}}</span>
+                </article>
+            </a>
+            <a href="{{soutiens_2_url}}">
+                <article>
+                    <div><img src="{{soutiens_2_image}}" alt="{{soutiens_2_alt}}"/></div>
+                    <span>{{soutiens_2_titre}}</span>
+                </article>
+            </a>
+            <a href="{{soutiens_3_url}}">
+                <article>
+                    <div><img src="{{soutiens_3_image}}" alt="{{soutiens_3_alt}}"/></div>
+                    <span>{{soutiens_3_titre}}</span>
+                </article>
+            </a>
+            <a href="{{soutiens_4_url}}">
+                <article>
+                    <div><img src="{{soutiens_4_image}}" alt="{{soutiens_4_alt}}"/></div>
+                    <span>{{soutiens_4_titre}}</span>
+                </article>
+            </a>
+            <a href="{{soutiens_5_url}}">
+                <article>
+                    <div><img src="{{soutiens_5_image}}" alt="{{soutiens_5_alt}}"/></div>
+                    <span>{{soutiens_5_titre}}</span>
+                </article>
+            </a>
+            <a href="{{soutiens_6_url}}">
+                <article>
+                    <div><img src="{{soutiens_6_image}}" alt="{{soutiens_6_alt}}"/></div>
+                    <span>{{soutiens_6_titre}}</span>
+                </article>
+            </a>
+
+            <a href="{{soutiens_7_url}}">
+                <article>
+                    <div><img src="{{soutiens_7_image}}" alt="{{soutiens_7_alt}}"/></div>
+                    <span>{{soutiens_7_titre}}</span>
+                </article>
+            </a>
+            <a href="{{soutiens_8_url}}">
+                <article>
+                    <div><img src="{{soutiens_8_image}}" alt="{{soutiens_8_alt}}"/></div>
+                    <span>{{soutiens_8_titre}}</span>
+                </article>
+            </a>
+            <a href="{{soutiens_9_url}}">
+                <article>
+                    <div><img src="{{soutiens_9_image}}" alt="{{soutiens_9_alt}}"/></div>
+                    <span>{{soutiens_9_titre}}</span>
+                </article>
+            </a>
+        </div>
     </div>
 </section>
 <footer class="main">
@@ -373,9 +432,8 @@
 
     <div class="madeby">
         <p class="legend">{{footer_madeby_intro}}</p>
-        <p><img src="assets/logo-resilient.png" alt="Resilient Innovation"/></p>
+        <p><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-BJEP1PGiZ.png" alt="Resilient Innovation"/></p>
     </div>
-
 
     <div class="contact">
         <address>
@@ -392,5 +450,8 @@
     </div>
 </footer>
 <script src="bundle.js"></script>
+<noscript>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=1795402577382050&ev=PageView&noscript=1"/>
+</noscript>
 </body>
 </html>

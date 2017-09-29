@@ -15,6 +15,9 @@ gulp.task('templates', function () {
         var map = {};
         rows.forEach(function (row) {
             map[row[0]] = row[1];
+            if(row[0] == 'test'){
+                console.info(row[1]);
+            }
         });
         gulp.src(['src/index.html'])
             .pipe(replace(/\{\{([a-zA-Z0-9-_]+)}}/g, function (match, p1, offset, string) {
@@ -37,7 +40,7 @@ gulp.task('compress-css', function(){
 
 gulp.task('compress-js', function (cb) {
     pump([
-            gulp.src('src/walkme.js'),
+            gulp.src('src/*.js'),
             uglify(),
             gulp.dest('build')
         ],
@@ -50,6 +53,7 @@ gulp.task('concat-js', function() {
         './lib/jquery-3.2.1.min.js',
         './lib/jquery.validate.min.js',
         './lib/createjs-2015.11.26.min.js',
+        './build/anim.js',
         './build/walkme.js'
     ])
         .pipe(concat('bundle.js'))
@@ -66,4 +70,11 @@ gulp.task('concat-css', function() {
         .pipe(gulp.dest('./dist/'));
 });
 
+gulp.task('static', ['compress-css', 'concat-css', 'compress-js', 'concat-js']);
 gulp.task('default', ['compress-css', 'concat-css', 'compress-js', 'concat-js', 'templates']);
+gulp.task('watch', function(){
+    gulp.watch('src/walkme.css', ['compress-css','concat-css']);
+    gulp.watch('src/walkme.js', ['compress-js','concat-js']);
+    gulp.watch('src/index.html', ['templates']);
+});
+

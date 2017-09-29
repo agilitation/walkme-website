@@ -9,6 +9,7 @@ $('.toggle').click(function () {
     $("#walking_man").toggleClass("on")
 });
 
+/*
 $('.try .choices button').click(function () {
     $('.try .form').slideDown();
     $('.try button').removeClass('active');
@@ -16,6 +17,7 @@ $('.try .choices button').click(function () {
     $('#objet-requete').val($(this).attr('data-title'));
     ga('send', 'button ' + $(this).attr('data-title'));
 });
+*/
 
 $('[data-show]').click(function () {
     $($(this).attr('data-show')).show();
@@ -30,10 +32,10 @@ $('.try form').validate({
 
         $.ajax({
             url: "/ticket.php",
-            data:  $(form).serializeArray(),
+            data: $(form).serializeArray(),
             dataType: 'json',
             method: 'post',
-            success: function(){
+            success: function () {
                 alert('message bien envoyé');
             }
         });
@@ -147,3 +149,68 @@ init();
 
 ga('create', 'UA-88974858-1', 'auto');
 ga('send', 'pageview');
+
+
+$('#reload').click(function () {
+    console.info("click");
+    $.ajax("/reload.php").done(function (data) {
+        console.info("success", data);
+
+        window.location.reload();
+    })
+});
+
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// Replaces the 'ytplayer' element with an <iframe> and
+// YouTube player after the API code downloads.
+var player;
+
+function onYouTubePlayerAPIReady() {
+    player = new YT.Player('video-embed', {
+        height: '416',
+        width: '740',
+        videoId: 'sVbtKRjkcHI',
+        playerVars: {
+            autoplay: 1,
+            controls: 0,
+            disablekb: 0,
+            hl: '{{page_locale}}',
+            loop: 1,
+            modestbranding: 1,
+            showinfo: 0,
+            autohide: 1,
+            color: 'white',
+            iv_load_policy: 3,
+            theme: 'light',
+            rel: 0
+        },
+        events: {
+            'onReady': onPlayerReady
+        }
+    });
+}
+
+
+function onPlayerReady(event) {
+    player.mute();
+}
+
+/**
+ * Facebook
+ */
+
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1795402577382050');
+fbq('track', 'PageView');
+

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>WalkMe by Resilient : retrouvez le plaisir de la marche</title>
-    <link rel="stylesheet" href="bundle.css">
+    <link rel="stylesheet" href="bundle.css?v=2017.09.29-1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="WalkMe by Resilient : retrouvez le plaisir de la marche"/>
     <meta property="og:type" content="website"/>
@@ -13,9 +13,11 @@
     <meta property="og:locale" content="fr"/>
     <meta property="og:video" content="openGraph_video_url"/>
     <meta name="description" content="Walkme vient en aide aux personnes ayant des troubles de la marche. Il permet de diminuer le risque de chute et vous fait retrouver le plaisir et la liberté de vous déplacer en toute autonomie.">
+    <meta name="keywords" content="walkme, mobilité, autonomie, parkinson, troubles de la marche">
 
 </head>
 <body>
+<div id="reload">↻</div>
 <header class="main">
     <h1>
         <a href="#"><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-Sy4Lb8MiZ.png" alt="WalkMe Logo"></a>
@@ -40,68 +42,142 @@
 </header>
 <section class="hero">
     <div>
-        <div id="video-container">
-            <iframe width="900" height="506"
-                    src="https://www.youtube.com/watch?v=sVbtKRjkcHI"
-                    frameborder="0"
-                    allowfullscreen></iframe>
-        </div>
-        <!--
-        <div id="video-container">
-            <video width="100%"  loop id="background-video">
-                <source src="assets/walk.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>-->
         <div class="content">
-            <!--<div id="video">-->
-            <!--<iframe width="100%" height="400" src="https://www.youtube.com/embed/a4a_BgwZNr0" frameborder="0"-->
-            <!--allowfullscreen></iframe>-->
-            <!--</div>-->
             <div class="text">
-                <!-- todo typewriter effect -->
                 <h1>Reprenez le contrôle de votre mobilité</h1>
                 <p>Walkme vient en aide aux personnes ayant des troubles de la marche<br>
 Il permet de diminuer le risque de chute et vous fait retrouver le plaisir et la liberté de vous déplacer en toute autonomie.</p>
             </div>
+        </div>
+        <div id="video-container">
+            <div id="video-embed"></div>
+        </div>
             <div class="cta">
                 <a href="#stimulation-auditive-rythmique" class="button">Découvrir la stimulation auditive rythmique</a>
                 <a href="#essayer" class="button try">Essayer</a>
             </div>
-        </div>
     </div>
 </section>
 <section class="partners">
     <h2>Ils parlent de nous</h2>
     <div class="rewiews-citations">
-        <a href="presse_1_url">
+        <a href="presse_1_url" target="_blank">
             <article>
-                <blockquote>presse_1_citation</blockquote>
-                <h1><img src="presse_1_img_src" alt="presse_1_img_alt"/></h1>
+                <h1><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-rymFrHbiW.png?fit=clamp&h=150&w=150" alt="presse_1_img_alt"/></h1>
+                <blockquote>Le walkme va vraiment changer la vie de ses utilisateurs, ainsi que celle de leurs proches</blockquote>
             </article>
         </a>
-        <a href="presse_2_url">
+        <a href="presse_2_url" target="_blank">
             <article>
-                <blockquote>presse_2_citation</blockquote>
-                <h1><img src="presse_2_img_src" alt="presse_2_img_alt"/></h1>
+                <h1><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-r1igPLfoZ.jpg?w=150&h=150&fit=clamp" alt="presse_2_img_alt"/></h1>
+                <blockquote>Un produit vraiment impressionnant, qui laisse présager une amélioration notable dans la vie des malades de Parkinson</blockquote>
             </article>
         </a>
-        <a href="presse_3_url">
+        <a href="presse_3_url" target="_blank">
             <article>
-                <blockquote>presse_3_citation</blockquote>
-                <h1><img src="presse_3_img_src" alt="presse_3_img_alt"/></h1>
+                <h1><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-S1kPrS-s-.png?fit=clamp&h=150&w=150" alt="presse_3_img_alt"/></h1>
+                <blockquote>Nous avons été bluffés par la Stimulation Rythmique Auditive</blockquote>
             </article>
         </a>
     </div>
+    <div class="cta">
+        <a href="#menu_href_presse" class="button" target="_blank">Voir plus d'articles</a>
+        <a href="#essayer" class="button try">Essayer</a>
+    </div>
+
     <div class="other-reviews">
-        <div><img src="assets/logos/presse/midi_libre.png" alt="Logo Midi Libre"/></div>
-        <div><img src="assets/logos/presse/connexionfrance.jpg" alt="Connexion logo CX"/></div>
+        <div><a href="presse_4_url"><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-rkO8HH-oW.jpg?fit=clamp&h=100&w=100" alt="presse_4_img_alt"/></a></div>
+        <div><a href="presse_5_url"><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-BynYBHWs-.png?fit=clamp&h=100&w=100" alt="presse_5_img_alt"/></a></div>
+        <div><a href="presse_6_url"><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-BynYBHWs-.png?fit=clamp&h=100&w=100" alt="presse_6_img_alt"/></a></div>
+    </div>
+</section>
+<section class="testimonials" id="temoignages">
+    <div>
+        <h1>WalkMe a changé leur vie</h1>
+        <h2>Jocelyne, Michel et Alain témoignent des bienfaits du WalkMe</h2>
+        <div class="blocks">
+            <a href="temoignages_1_url" target="_blank">
+                <article class="testimonial">
+                    <div class="container">
+                        <img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-SkN6BrWs-.jpg?fit=max&w=300" alt="Témoignage de Jocelyne">
+                    </div>
+                    <div class="text">
+                        <h1>Une innovation essentielle</h1>
+                        <p>Émue, Jocelyne reprend espoir grâce au Walkme : « la santé n’a pas de prix »</p>
+                    </div>
+                </article>
+            </a>
+            <a href="temoignages_2_url" target="_blank">
+                <article class="testimonial">
+                    <div class="container">
+                        <img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-BJhhBrWiZ.jpg?fit=max&w=300" alt="temoignages_2_image_alt">
+                    </div>
+                    <div class="text">
+                        <h1>Un appareil étonnant</h1>
+                        <p>Grâce au Walkme, Alain peut à nouveau « taper dans un ballon comme si de rien n’était »</p>
+                    </div>
+                </article>
+            </a>
+            <a href="temoignages_3_url" target="_blank">
+                <article class="testimonial">
+                    <div class="container">
+                        <img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-SydABrWiZ.jpg?fit=max&w=300" alt="temoignages_3_image_alt">
+                    </div>
+                    <div class="text">
+                        <h1>Une libération</h1>
+                        <p>Michel de nouveau autonome se mobilise autour du Walkme : « le personnel soignant impressionné »</p>
+                    </div>
+                </article>
+            </a>
+        </div>
+
+        <div class="cta">
+            <a href="#boitier" class="button">En savoir plus</a>
+            <a href="#essayer" class="button try">Essayer</a>
+        </div>
+    </div>
+</section>
+<section id="presse-concours" class="partners">
+    <div>
+        <h2>Ils nous ont récompensé</h2>
+        <div class="recompenses items">
+            <a href="recompenses_1_url">
+                <article>
+                    <div><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-SyImSrZob.png?fit=clamp&h=150&w=150" alt="EDF Pulse"/></div>
+                    <span>e-santé</span>
+                </article>
+            </a>
+            <a href="recompenses_2_url">
+                <article>
+                    <div><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-rkeVBH-sb.jpg?fit=clamp&h=150&w=150" alt="Label Observeur Design"/></div>
+                    <span>design</span>
+                </article>
+            </a>
+            <a href="recompenses_3_url">
+                <article>
+                    <div><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-B1uESSZsb.jpg?fit=clamp&h=150&w=150" alt="recompenses_3_alt"/></div>
+                    <span>électronique</span>
+                </article>
+            </a>
+            <a href="recompenses_4_url">
+                <article>
+                    <div><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-HJ-rrSZsZ.jpg?fit=clamp&h=150&w=150" alt="recompenses_4_alt"/></div>
+                    <span>e-santé</span>
+                </article>
+            </a>
+            <a href="recompenses_5_url">
+                <article>
+                    <div><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-BkorrrWsZ.jpg?fit=clamp&h=150&w=150" alt="Logo concours pépite"/></div>
+                    <span>entreprenariat</span>
+                </article>
+            </a>
+        </div>
     </div>
 </section>
 <section class="sra" id="stimulation-auditive-rythmique">
     <div class="head">
         <div class="text">
-            <h1>Au cœur du WalkMe : la SRA</h1>
+            <h1>Au cœur du WalkMe&nbsp;:<br>la SRA</h1>
             <p><p>Premier appareil mettant en œuvre la stimulation auditive rythmique, technique qui attire les chercheurs, scientifiques et neurologues depuis plus de 20 ans.</p>
 <p>La Stimulation Auditive Rythmique (SAR) consiste en l’émission d’ondes sonores, permettant la synchronisation des pas, restaurant ainsi une marche fluide et rythmée.</p></p>
             <p class="know-more">
@@ -120,52 +196,6 @@ Il permet de diminuer le risque de chute et vous fait retrouver le plaisir et la
                 style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
         <div id="dom_overlay_container"
              style="pointer-events:none; overflow:hidden; width:458px; height:800px; position: absolute; left: 0px; top: 0px; display: block;">
-        </div>
-    </div>
-</section>
-<section class="testimonials" id="temoignages">
-    <div>
-        <h1>WalkMe a changé leur vie</h1>
-        <h2>Jocelyne, Michel et Alain témoignent des bienfaits du WalkMe</h2>
-        <div class="blocks">
-            <a href="temoignages_1_url">
-                <article class="testimonial">
-                    <div class="container">
-                        <img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-SkN6BrWs-.jpg?fit=max&w=300" alt="Témoignage de Jocelyne">
-                    </div>
-                    <div class="text">
-                        <h1>Une innovation essentielle</h1>
-                        <p>Émue, Jocelyne reprend espoir grâce au Walkme : « la santé n’a pas de prix »</p>
-                    </div>
-                </article>
-            </a>
-            <a href="temoignages_2_url">
-                <article class="testimonial">
-                    <div class="container">
-                        <img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-BJhhBrWiZ.jpg?fit=max&w=300" alt="temoignages_2_image_alt">
-                    </div>
-                    <div class="text">
-                        <h1>Un appareil étonnant</h1>
-                        <p>Grâce au Walkme, Alain peut à nouveau « taper dans un ballon comme si de rien n’était »</p>
-                    </div>
-                </article>
-            </a>
-            <a href="temoignages_3_url">
-                <article class="testimonial">
-                    <div class="container">
-                        <img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-SydABrWiZ.jpg?fit=max&w=300" alt="temoignages_3_image_alt">
-                    </div>
-                    <div class="text">
-                        <h1>Une libération</h1>
-                        <p>Michel de nouveau autonome se mobilise autour du Walkme : « le personnel soignant impressionné »</p>
-                    </div>
-                </article>
-            </a>
-        </div>
-
-        <div class="cta">
-            <a href="#boitier" class="button">En savoir plus</a>
-            <a href="#essayer" class="button try">Essayer</a>
         </div>
     </div>
 </section>
@@ -192,13 +222,12 @@ Ceci n’est pas un dispositif médical.</p>
         </div>
     </div>
 </section>
-
 <section id="essayer" class="try">
     <div>
         <div>
             <div class="package-content">
                 <img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-SJOezUMob.png" alt="WalkME boitier blanc">
-                <h1>Essayez maintenant</h1>
+                <h1>Essayez maintenant !</h1>
                 <h2>Bénéficiez d’une période d'essai de 15 jours gratuits et de 2 ans de garantie fabricant.</h2>
                 <div><p>Le pack comprend&nbsp;: </p>
 <ul>
@@ -209,6 +238,7 @@ Ceci n’est pas un dispositif médical.</p>
             </div>
         </div>
         <aside class="order">
+            <h2>Contactez-nous pour commencer votre essai gratuit</h2><!--
             <h2 class="choice">Vous souhaitez…</h2>
             <div class="choices">
                 <div class="try">
@@ -223,6 +253,7 @@ Ceci n’est pas un dispositif médical.</p>
                         Besoin de + d'infos ? Notre équipe prend contact avec vous
                     </div>
                 </div>
+                <!--
                 <div class="credit">
                     <button data-title="Facilités de paiement" data-show=".horaires">Des facilités de paiement</button>
                     <div class="details">
@@ -230,7 +261,8 @@ Ceci n’est pas un dispositif médical.</p>
 Nous vous accompagnons dans l'élaboration de votre dossier de financement
                     </div>
                 </div>
-            </div>
+
+            </div>-->
             <div class="form">
                 <form action="#">
                     <input type="hidden" name="objet" id="objet-requete">
@@ -345,39 +377,66 @@ Nous vous accompagnons dans l'élaboration de votre dossier de financement
         </aside>
     </div>
 </section>
-<section id="presse-concours" class="partners">
+<section id="soutiens" class="partners">
     <div>
-        <h2>Ils nous ont récompensé</h2>
-        <a href="recompenses_1_url">
-            <article>
-                <div><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-SyImSrZob.png?fit=max&h=150&w=150" alt="recompenses_1_alt"/></div>
-                <span>e-santé</span>
-            </article>
-        </a>
-        <a href="recompenses_2_url">
-            <article>
-                <div><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-rkeVBH-sb.jpg?fit=max&h=150&w=150" alt="recompenses_2_alt"/></div>
-                <span>recompenses_2_titre</span>
-            </article>
-        </a>
-        <a href="recompenses_3_url">
-            <article>
-                <div><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-B1uESSZsb.jpg?fit=max&h=150&w=150" alt="recompenses_3_alt"/></div>
-                <span>recompenses_3_titre</span>
-            </article>
-        </a>
-        <a href="recompenses_4_url">
-            <article>
-                <div><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-HJ-rrSZsZ.jpg?fit=max&h=150&w=150" alt="recompenses_4_alt"/></div>
-                <span>recompenses_4_titre</span>
-            </article>
-        </a>
-        <a href="recompenses_5_url">
-            <article>
-                <div><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-BkorrrWsZ.jpg?fit=max&h=150&w=150" alt="recompenses_5_alt"/></div>
-                <span>recompenses_5_titre</span>
-            </article>
-        </a>
+        <h2>Ils nous soutiennent</h2>
+        <div class="soutiens items">
+            <a href="soutiens_1_url">
+                <article>
+                    <div><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-Hk0RAtjob.png?fit=clamp&h=150&w=150&pad=20&bg=fff" alt="soutiens_1_alt"/></div>
+                    <span>BIC</span>
+                </article>
+            </a>
+            <a href="soutiens_2_url">
+                <article>
+                    <div><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-H1IJk9jib.png?fit=clamp&h=150&w=150&pad=20&bg=fff" alt="soutiens_2_alt"/></div>
+                    <span>Créalia</span>
+                </article>
+            </a>
+            <a href="soutiens_3_url">
+                <article>
+                    <div><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-SyR115sob.png?fit=clamp&h=150&w=150&pad=20&bg=fff" alt="soutiens_3_alt"/></div>
+                    <span>La Région Occitanie</span>
+                </article>
+            </a>
+            <a href="soutiens_4_url">
+                <article>
+                    <div><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-HJNe1qio-.png?fit=clamp&h=150&w=150&pad=20&bg=fff" alt="soutiens_4_alt"/></div>
+                    <span>soutiens_4_titre</span>
+                </article>
+            </a>
+            <a href="soutiens_5_url">
+                <article>
+                    <div><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-S16lk5iiZ.png?fit=clamp&h=150&w=150&pad=20&bg=fff" alt="soutiens_5_alt"/></div>
+                    <span>soutiens_5_titre</span>
+                </article>
+            </a>
+            <a href="soutiens_6_url">
+                <article>
+                    <div><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-Hk_byciiW.png?fit=clamp&h=150&w=150&pad=20&bg=fff" alt="soutiens_6_alt"/></div>
+                    <span>soutiens_6_titre</span>
+                </article>
+            </a>
+
+            <a href="soutiens_7_url">
+                <article>
+                    <div><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-H1A-JcioW.jpeg?fit=clamp&h=150&w=150&pad=20&bg=fff" alt="soutiens_7_alt"/></div>
+                    <span>soutiens_7_titre</span>
+                </article>
+            </a>
+            <a href="soutiens_8_url">
+                <article>
+                    <div><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-H1rMJ5ji-.png?fit=clamp&h=150&w=150&pad=20&bg=fff" alt="soutiens_8_alt"/></div>
+                    <span>soutiens_8_titre</span>
+                </article>
+            </a>
+            <a href="soutiens_9_url">
+                <article>
+                    <div><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-S13M15jo-.png?fit=clamp&h=150&w=150&pad=20&bg=fff" alt="soutiens_9_alt"/></div>
+                    <span>soutiens_9_titre</span>
+                </article>
+            </a>
+        </div>
     </div>
 </section>
 <footer class="main">
@@ -385,7 +444,7 @@ Nous vous accompagnons dans l'élaboration de votre dossier de financement
         <ul>
             <li><a href="footer_quiSommesNous_url">Qui sommes-nous ?</a></li>
             <li><a href="footer_mentionsLegales_url">Mentions légales</a></li>
-            <li><a href="footer_CGV_url">Conditions générales de vente</a></li>
+            <li><a href="https://www.google.com">Conditions Générales de Vente</a></li>
             <li><a href="footer_presse_url">Presse</a></li>
             <li><a href="footer_documentation_url">Document scientifique</a></li>
         </ul>
@@ -393,9 +452,8 @@ Nous vous accompagnons dans l'élaboration de votre dossier de financement
 
     <div class="madeby">
         <p class="legend">Un produit créé par</p>
-        <p><img src="assets/logo-resilient.png" alt="Resilient Innovation"/></p>
+        <p><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-BJEP1PGiZ.png" alt="Resilient Innovation"/></p>
     </div>
-
 
     <div class="contact">
         <address>
@@ -412,5 +470,8 @@ Nous vous accompagnons dans l'élaboration de votre dossier de financement
     </div>
 </footer>
 <script src="bundle.js"></script>
+<noscript>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=1795402577382050&ev=PageView&noscript=1"/>
+</noscript>
 </body>
 </html>

@@ -502,6 +502,7 @@ section.try aside {
 aside h2 {
     padding: 1em;
     text-align : center;
+    line-height: 1.5em;
 }
 
 /*section.try .form {
@@ -752,6 +753,9 @@ section.partners {
     text-align: center;
 }
 
+section.partners > div > h1 {
+    margin: 1em;
+}
 section.partners a blockquote {
     /*color: white;*/
     position: relative;
@@ -818,11 +822,15 @@ section.partners h2 {
     margin: 1em;
 }
 
-section.partners h1 {
+section.partners article h1 {
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
     overflow: hidden;
     border-radius: 6px;
     background: white;
+}
+
+section.partners h1 {
+
 }
 .other-reviews {
     display: none;
@@ -871,8 +879,12 @@ section.partners li span {
     border-radius: 4px;
     height: 150px;
     width: 150px;
-    margin-bottom: 8px;
+    margin: 0 auto 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.items article span {
+    font-size: 14px;
 }
 
 .items article img {
@@ -903,6 +915,7 @@ section.partners li span {
         flex-wrap: wrap;
         max-height: inherit;
     }
+
 
     .order .form {
         padding: 1em;

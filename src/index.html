@@ -1,459 +1,443 @@
 <!DOCTYPE html>
 <html lang="{{page_locale}}">
 <head>
-    <meta charset="UTF-8">
-    <title>{{fenetre_titre}}</title>
-    <link rel="stylesheet" href="bundle.css?v=2017.09.29-1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="{{openGraph_titre}}"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="{{openGraph_url}}"/>
-    <meta property="og:image" content="{{openGraph_image}}"/>
-    <meta property="og:description" content="{{openGraph_description}}"/>
-    <meta property="og:locale" content="{{openGraph_locale}}"/>
-    <meta property="og:video" content="{{openGraph_video_url}}"/>
-    <meta name="description" content="{{meta_description}}">
-    <meta name="keywords" content="{{meta_keywords}}">
+  <meta charset="UTF-8">
+  <title>{{fenetre_titre}}</title>
+  <link rel="stylesheet" href="bundle.css?v=2017.10.19-2">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="{{openGraph_titre}}"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="{{openGraph_url}}"/>
+  <meta property="og:image" content="{{openGraph_image}}"/>
+  <meta property="og:description" content="{{openGraph_description}}"/>
+  <meta property="og:locale" content="{{openGraph_locale}}"/>
+  <meta property="og:video" content="{{openGraph_video_url}}"/>
+  <meta name="description" content="{{meta_description}}">
+  <meta name="keywords" content="{{meta_keywords}}">
 
 </head>
 <body>
 <div id="reload">↻</div>
 <header class="main">
-    <h1>
-        <a href="#"><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-Sy4Lb8MiZ.png" alt="WalkMe Logo"></a>
-    </h1>
-    <nav>
-        <a class="button" href="#{{menu_href_sra}}" title="{{menu_titre_sra_title}}">
-            {{menu_titre_sra}}
-        </a>
-        <a class="button" href="#{{menu_href_temoignages}}" title="{{menu_titre_temoignages_title}}">
-            {{menu_titre_temoignages}}
-        </a>
-        <a class="button" href="#{{menu_href_boitier}}" title="{{menu_titre_boitier_title}}">
-            {{menu_titre_boitier}}
-        </a>
-        <a class="button try" href="#{{menu_href_essayer}}" title="{{menu_titre_essayer_title}}">
-            {{menu_titre_essayer}}
-        </a>
-        <span class="tel"><a href="tel:{{menu_click2call}}" title="{{menu_click2call_title}}">
+  <h1>
+    <a href="#"><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-Sy4Lb8MiZ.png" alt="WalkMe Logo"></a>
+  </h1>
+  <nav>
+    <a class="button" href="#{{menu_href_temoignages}}" title="{{menu_titre_temoignages_title}}">
+      {{menu_titre_temoignages}}
+    </a>
+    <a class="button" href="#{{menu_href_sra}}" title="{{menu_titre_sra_title}}">
+      {{menu_titre_sra}}
+    </a>
+    <a class="button" href="#{{menu_href_boitier}}" title="{{menu_titre_boitier_title}}">
+      {{menu_titre_boitier}}
+    </a>
+    <a class="button try" href="#{{menu_href_essayer}}" title="{{menu_titre_essayer_title}}">
+      {{menu_titre_essayer}}
+    </a>
+    <span class="tel"><a href="tel:{{menu_click2call}}" title="{{menu_click2call_title}}">
             &phone; {{menu_telephone}}
         </a></span>
-    </nav>
+  </nav>
 </header>
 <section class="hero">
-    <div>
-        <div class="content">
-            <div class="text">
-                <h1>{{accueil_titre}}</h1>
-                <p>{{accueil_texte}}</p>
-            </div>
-        </div>
-        <div id="video-container">
-            <div id="video-embed"></div>
-        </div>
-            <div class="cta">
-                <a href="#{{menu_href_sra}}" class="button">{{accueil_cta_sra}}</a>
-                <a href="#{{menu_href_essayer}}" class="button try">{{cta_essayer}}</a>
-            </div>
+  <div>
+    <div class="content">
+      <div class="text">
+        <h1>{{accueil_titre}}</h1>
+        <p>{{accueil_texte}}</p>
+      </div>
     </div>
-</section>
-<section class="partners">
-    <div>
-    <h1>{{partenaires_presse}}</h1>
-    <div class="rewiews-citations">
-        <a href="{{presse_1_url}}" target="_blank">
-            <article>
-                <h1><img src="{{presse_1_img_src}}" alt="{{presse_1_img_alt}}"/></h1>
-                <blockquote>{{presse_1_citation}}</blockquote>
-            </article>
-        </a>
-        <a href="{{presse_2_url}}" target="_blank">
-            <article>
-                <h1><img src="{{presse_2_img_src}}" alt="{{presse_2_img_alt}}"/></h1>
-                <blockquote>{{presse_2_citation}}</blockquote>
-            </article>
-        </a>
-        <a href="{{presse_3_url}}" target="_blank">
-            <article>
-                <h1><img src="{{presse_3_img_src}}" alt="{{presse_3_img_alt}}"/></h1>
-                <blockquote>{{presse_3_citation}}</blockquote>
-            </article>
-        </a>
+    <div id="video-container">
+      <div id="video-embed"></div>
     </div>
     <div class="cta">
-        <a href="#{{menu_href_presse}}" class="button" target="_blank">{{presse_cta_ensavoirplus}}</a>
-        <a href="#{{menu_href_essayer}}" class="button try">{{cta_essayer}}</a>
+      <a href="#{{menu_href_temoignages}}" class="button">{{cta_temoignages}}</a>
+      <a href="#{{menu_href_essayer}}" class="button try">{{cta_essayer}}</a>
+    </div>
+  </div>
+</section>
+<section class="partners">
+  <div>
+    <h1>{{partenaires_presse}}</h1>
+    <div class="rewiews-citations">
+      <a href="{{presse_1_url}}" target="_blank">
+        <article>
+          <h1><img src="{{presse_1_img_src}}" alt="{{presse_1_img_alt}}"/></h1>
+          <blockquote>{{presse_1_citation}}</blockquote>
+        </article>
+      </a>
+      <a href="{{presse_2_url}}" target="_blank">
+        <article>
+          <h1><img src="{{presse_2_img_src}}" alt="{{presse_2_img_alt}}"/></h1>
+          <blockquote>{{presse_2_citation}}</blockquote>
+        </article>
+      </a>
+      <a href="{{presse_3_url}}" target="_blank">
+        <article>
+          <h1><img src="{{presse_3_img_src}}" alt="{{presse_3_img_alt}}"/></h1>
+          <blockquote>{{presse_3_citation}}</blockquote>
+        </article>
+      </a>
+    </div>
+    <div class="cta">
+      <a href="{{lien_article_presse}}" class="button" target="_blank">{{presse_cta_ensavoirplus}}</a>
+      <a href="#{{menu_href_essayer}}" class="button try">{{cta_essayer}}</a>
     </div>
 
     <div class="other-reviews">
-        <div><a href="{{presse_4_url}}"><img src="{{presse_4_img_src}}" alt="{{presse_4_img_alt}}"/></a></div>
-        <div><a href="{{presse_5_url}}"><img src="{{presse_5_img_src}}" alt="{{presse_5_img_alt}}"/></a></div>
-        <div><a href="{{presse_6_url}}"><img src="{{presse_6_img_src}}" alt="{{presse_6_img_alt}}"/></a></div>
+      <div><a href="{{presse_4_url}}"><img src="{{presse_4_img_src}}" alt="{{presse_4_img_alt}}"/></a></div>
+      <div><a href="{{presse_5_url}}"><img src="{{presse_5_img_src}}" alt="{{presse_5_img_alt}}"/></a></div>
+      <div><a href="{{presse_6_url}}"><img src="{{presse_6_img_src}}" alt="{{presse_6_img_alt}}"/></a></div>
     </div>
-    </div>
+  </div>
 </section>
 <section class="testimonials" id="{{menu_href_temoignages}}">
-    <div>
-        <h1>{{temoignages_titre}}</h1>
-        <h2>{{temoignages_soustitre}}</h2>
-        <div class="blocks">
-            <a href="{{temoignages_1_url}}" target="_blank">
-                <article class="testimonial">
-                    <div class="container">
-                        <img src="{{temoignages_1_image}}" alt="{{temoignages_1_image_alt}}">
-                    </div>
-                    <div class="text">
-                        <h1>{{temoignages_1_titre}}</h1>
-                        <p>{{temoignages_1_texte}}</p>
-                    </div>
-                </article>
-            </a>
-            <a href="{{temoignages_2_url}}" target="_blank">
-                <article class="testimonial">
-                    <div class="container">
-                        <img src="{{temoignages_2_image}}" alt="{{temoignages_2_image_alt}}">
-                    </div>
-                    <div class="text">
-                        <h1>{{temoignages_2_titre}}</h1>
-                        <p>{{temoignages_2_texte}}</p>
-                    </div>
-                </article>
-            </a>
-            <a href="{{temoignages_3_url}}" target="_blank">
-                <article class="testimonial">
-                    <div class="container">
-                        <img src="{{temoignages_3_image}}" alt="{{temoignages_3_image_alt}}">
-                    </div>
-                    <div class="text">
-                        <h1>{{temoignages_3_titre}}</h1>
-                        <p>{{temoignages_3_texte}}</p>
-                    </div>
-                </article>
-            </a>
-        </div>
-
-        <div class="cta">
-            <a href="#{{menu_href_boitier}}" class="button">{{cta_boitier}}</a>
-            <a href="#{{menu_href_essayer}}" class="button try">{{cta_essayer}}</a>
-        </div>
+  <div>
+    <h1>{{temoignages_titre}}</h1>
+    <h2>{{temoignages_soustitre}}</h2>
+    <div class="blocks">
+      <a href="{{temoignages_1_url}}" target="_blank">
+        <article class="testimonial">
+          <div class="container">
+            <img src="{{temoignages_1_image}}" alt="{{temoignages_1_image_alt}}">
+          </div>
+          <div class="text">
+            <h1>{{temoignages_1_titre}}</h1>
+            <p>{{temoignages_1_texte}}</p>
+          </div>
+        </article>
+      </a>
+      <a href="{{temoignages_2_url}}" target="_blank">
+        <article class="testimonial">
+          <div class="container">
+            <img src="{{temoignages_2_image}}" alt="{{temoignages_2_image_alt}}">
+          </div>
+          <div class="text">
+            <h1>{{temoignages_2_titre}}</h1>
+            <p>{{temoignages_2_texte}}</p>
+          </div>
+        </article>
+      </a>
+      <a href="{{temoignages_3_url}}" target="_blank">
+        <article class="testimonial">
+          <div class="container">
+            <img src="{{temoignages_3_image}}" alt="{{temoignages_3_image_alt}}">
+          </div>
+          <div class="text">
+            <h1>{{temoignages_3_titre}}</h1>
+            <p>{{temoignages_3_texte}}</p>
+          </div>
+        </article>
+      </a>
     </div>
+
+    <div class="cta">
+      <a href="{{lien_playlist}}" class="button">{{cta_playlist}}</a>
+      <a href="#{{menu_href_essayer}}" class="button try">{{cta_essayer}}</a>
+    </div>
+  </div>
 </section>
 <section id="presse-concours" class="partners">
-    <div>
-        <h1>{{partenaires_recompenses}}</h1>
-        <div class="recompenses items">
-            <a href="{{recompenses_1_url}}">
-                <article>
-                    <div><img src="{{recompenses_1_image}}" alt="{{recompenses_1_alt}}"/></div>
-                    <span>{{recompenses_1_titre}}</span>
-                </article>
-            </a>
-            <a href="{{recompenses_2_url}}">
-                <article>
-                    <div><img src="{{recompenses_2_image}}" alt="{{recompenses_2_alt}}"/></div>
-                    <span>{{recompenses_2_titre}}</span>
-                </article>
-            </a>
-            <a href="{{recompenses_3_url}}">
-                <article>
-                    <div><img src="{{recompenses_3_image}}" alt="{{recompenses_3_alt}}"/></div>
-                    <span>{{recompenses_3_titre}}</span>
-                </article>
-            </a>
-            <a href="{{recompenses_4_url}}">
-                <article>
-                    <div><img src="{{recompenses_4_image}}" alt="{{recompenses_4_alt}}"/></div>
-                    <span>{{recompenses_4_titre}}</span>
-                </article>
-            </a>
-            <a href="{{recompenses_5_url}}">
-                <article>
-                    <div><img src="{{recompenses_5_image}}" alt="{{recompenses_5_alt}}"/></div>
-                    <span>{{recompenses_5_titre}}</span>
-                </article>
-            </a>
-        </div>
+  <div>
+    <h1>{{partenaires_recompenses}}</h1>
+    <div class="recompenses items">
+      <a href="{{recompenses_1_url}}">
+        <article>
+          <div><img src="{{recompenses_1_image}}" alt="{{recompenses_1_alt}}"/></div>
+          <span>{{recompenses_1_titre}}</span>
+        </article>
+      </a>
+      <a href="{{recompenses_2_url}}">
+        <article>
+          <div><img src="{{recompenses_2_image}}" alt="{{recompenses_2_alt}}"/></div>
+          <span>{{recompenses_2_titre}}</span>
+        </article>
+      </a>
+      <a href="{{recompenses_3_url}}">
+        <article>
+          <div><img src="{{recompenses_3_image}}" alt="{{recompenses_3_alt}}"/></div>
+          <span>{{recompenses_3_titre}}</span>
+        </article>
+      </a>
+      <a href="{{recompenses_4_url}}">
+        <article>
+          <div><img src="{{recompenses_4_image}}" alt="{{recompenses_4_alt}}"/></div>
+          <span>{{recompenses_4_titre}}</span>
+        </article>
+      </a>
+      <a href="{{recompenses_5_url}}">
+        <article>
+          <div><img src="{{recompenses_5_image}}" alt="{{recompenses_5_alt}}"/></div>
+          <span>{{recompenses_5_titre}}</span>
+        </article>
+      </a>
     </div>
+  </div>
 </section>
 <section class="sra" id="{{menu_href_sra}}">
+  <div>
     <div class="head">
-        <div class="text">
-            <h1>{{sra_titre}}</h1>
-            <p>{{sra_corps}}</p>
-            <p class="know-more">
-                {{sra_ensavoirplus_prelien}}
-                <a href="{{sra_ensavoirplus_lien_url}}">{{sra_ensavoirplus_lien_texte}}</a>
-                {{sra_ensavoirplus_postlien}}
-            </p>
-            <div class="cta">
-                <a href="#{{menu_href_temoignages}}" class="button">{{cta_temoignages}}</a>
-                <a href="#{{menu_href_essayer}}" class="button try">{{cta_essayer}}</a>
-            </div>
+      <div class="text">
+        <h1>{{sra_titre}}</h1>
+        <p>{{sra_corps}}</p>
+        <!--
+        <p class="know-more">
+            {{sra_ensavoirplus_prelien}}
+            <a href="{{sra_ensavoirplus_lien_url}}">{{sra_ensavoirplus_lien_texte}}</a>
+            {{sra_ensavoirplus_postlien}}
+        </p>-->
+        <div class="cta">
+          <a href="{{sra_ensavoirplus_lien_url}}" class="button">{{sra_ensavoirplus_lien_texte}}</a>
+          <a href="#{{menu_href_essayer}}" class="button try">{{cta_essayer}}</a>
         </div>
+      </div>
     </div>
     <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00)">
-        <canvas id="canvas" width="458" height="800"
-                style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-        <div id="dom_overlay_container"
-             style="pointer-events:none; overflow:hidden; width:458px; height:800px; position: absolute; left: 0px; top: 0px; display: block;">
-        </div>
+      <canvas id="canvas" width="458" height="800"
+              style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+      <div id="dom_overlay_container"
+           style="pointer-events:none; overflow:hidden; width:458px; height:800px; position: absolute; left: 0px; top: 0px; display: block;">
+      </div>
     </div>
+  </div>
 </section>
 <section class="specifications" id="{{menu_href_boitier}}">
-    <div>
-        <div class="text">
-            <h1>{{boitier_titre}}</h1>
-            <div>{{boitier_corps}}</div>
-            <p class="button-container"><a href="#{{menu_href_essayer}}" class="button try big">{{cta_essayer_big}}</a>
-            </p>
-            <p class="legal">{{boitier_mentions_legales}}</p>
-        </div>
+  <div>
+    <div class="text">
+      <h1>{{boitier_titre}}</h1>
+      <div>{{boitier_corps}}</div>
+      <p class="button-container"><a href="#{{menu_href_essayer}}" class="button try big">{{cta_essayer_big}}</a>
+      </p>
+      <p class="legal">{{boitier_mentions_legales}}</p>
     </div>
+  </div>
 </section>
 <section id="essayer" class="try">
+  <div>
     <div>
-        <div>
-            <div class="package-content">
-                <img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-SJOezUMob.png" alt="{{essayer_image_alt}}">
-                <h1>{{essayer_titre}}</h1>
-                <h2>{{essayer_soustitre}}</h2>
-                <div>{{essayer_pack_texte}}</div>
-            </div>
-        </div>
-        <aside class="order">
-            <h2>{{essayer_formulaire_titre}}</h2><!--
-            <h2 class="choice">{{form_choix}}</h2>
-            <div class="choices">
-                <div class="try">
-                    <button data-title="Essai" data-hide=".horaires">{{form_choix_essayer}}</button>
-                    <div class="details">
-                        {{form_choix_essayer_details}}
-                    </div>
-                </div>
-                <div class="callback">
-                    <button data-title="Callback" data-show=".horaires">{{form_choix_callback}}</button>
-                    <div class="details">
-                        {{form_choix_callback_details}}
-                    </div>
-                </div>
-                <!--
-                <div class="credit">
-                    <button data-title="Facilités de paiement" data-show=".horaires">{{form_choix_credit}}</button>
-                    <div class="details">
-                        {{form_choix_credit_details}}
-                    </div>
-                </div>
-
-            </div>-->
-            <div class="form">
-                <form action="#">
-                    <input type="hidden" name="objet" id="objet-requete">
-                    <fieldset>
-                        <div class="field">
-                            <label>{{form_etat}}</label>
-                            <div class="control radio-button-group">
-                                <label><input type="radio"
-                                              name="pour" value="moi" checked
-                                              data-hide="#other-who"
-                                              data-show=".patient">
-                                    {{form_etat_futurUtilisateur}}
-                                </label>
-                                <label><input type="radio" name="pour" value="autre"
-                                              data-show="#other-who"
-                                              data-hide=".patient">
-                                    {{form_etat_autre}}
-                                </label>
-                                <select name="pour_autre" id="other-who" style="display: none;">
-                                    <option value="" selected></option>
-                                    <option value="aidant">{{form_etat_autre_aidant}}</option>
-                                    <option value="famille">{{form_etat_autre_famille}}</option>
-                                    <option value="pro">{{form_etat_autre_pro}}</option>
-                                    <option value="asso">{{form_etat_autre_asso}}</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="field patient">
-                            <label>{{form_attentes}}</label>
-                            <div class="control"><input type="text" name="attentes"></div>
-                        </div>
-                        <div class="field patient">
-                            <label>{{form_age}}</label>
-                            <div class="control"><input type="number" name="age" min="0"></div>
-                        </div>
-                        <div class="field patient">
-                            <label>{{form_telephone}}</label>
-                            <div class="control"><input type="tel" name="telephone" class="required"></div>
-                        </div>
-                        <div class="field horaires">
-                            <label>{{form_heureRappel}}</label>
-                            <div class="control radio-button-group">
-                                <label><input type="radio" name="horaires" value="matin" checked>{{form_heureRappel_matin}}</label>
-                                <label><input type="radio" name="horaires" value="aprem">{{form_heureRappel_apresmidi}}</label>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <div class="row">
-                        <fieldset>
-
-                            <h3>{{form_coord}}</h3>
-                            <div class="field">
-                                <label>{{form_coord_civ}}</label>
-                                <div class="control radio-button-group">
-                                    <label><input type="radio" name="civilite" value="monsieur" checked>{{form_coord_civ_m}}</label>
-                                    <label><input type="radio" name="civilite"
-                                                  value="madame">{{form_coord_civ_mme}}</label>
-                                    <label><input type="radio" name="civilite"
-                                                  value="docteur">{{form_coord_civ_dr}}</label>
-                                    <label><input type="radio" name="civilite" value="professeur">{{form_coord_civ_pr}}</label>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label>{{form_coord_civ_nom}} *</label>
-                                <div class="control text"><input type="text" name="nom" required></div>
-                            </div>
-                            <div class="field">
-                                <label>{{form_coord_civ_prenom}} *</label>
-                                <div class="control text"><input type="text" name="prenom" required></div>
-                            </div>
-                            <div class="field">
-                                <label>{{form_coord_raisonSociale}}<span>{{form_coord_raisonSociale_siApplicable}}</span></label>
-                                <div class="control text"><input type="text" name="raison_sociale"></div>
-                            </div>
-                            <div class="field">
-                                <label>{{form_coord_email}}<span></span></label>
-                                <div class="control text"><input type="email" name="email"></div>
-                            </div>
-                        </fieldset>
-                        <div class="spacer"></div>
-                        <fieldset>
-                            <h3>{{form_adresse}}</h3>
-                            <div class="field">
-                                <label>{{form_coord_adresse_ligne}} *</label>
-                                <div class="control text"><input type="text" name="adresse_1" required></div>
-                            </div>
-                            <div class="field">
-                                <label></label>
-                                <div class="control text"><input type="text" name="adresse_2"></div>
-                            </div>
-                            <div class="field">
-                                <label>{{form_adresse_cp}} *</label>
-                                <div class="control city"><input type="text" name="code_postal" required></div>
-                            </div>
-                            <div class="field">
-                                <label>{{form_adresse_ville}} *</label>
-                                <div class="control city"><input type="text" name="ville" required></div>
-                            </div>
-                            <div class="field">
-                                <label>{{form_adresse_pays}} *</label>
-                                <div class="control country"><input type="text" name="pays" required
-                                                                    value="{{form_adresse_pays_defaut}}"></div>
-                            </div>
-                        </fieldset>
-                    </div>
-                    <p class="end">
-                        <button class="order try">{{form_envoyer}}</button>
-                    </p>
-                </form>
-            </div>
-
-        </aside>
+      <div class="package-content">
+        <img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-SJOezUMob.png" alt="{{essayer_image_alt}}">
+        <h1>{{essayer_titre}}</h1>
+        <h2>{{essayer_soustitre}}</h2>
+        <div>{{essayer_pack_texte}}</div>
+      </div>
     </div>
+    <aside class="order">
+      <h1>{{essayer_formulaire_titre}}</h1>
+      <h2>{{essayer_formulaire_soustitre}}</h2>
+      <div class="form">
+        <form action="#">
+          <input type="hidden" name="objet" id="objet-requete">
+          <fieldset>
+            <div class="field">
+              <label>{{form_etat}}</label>
+              <div class="control radio-button-group">
+                <select name="pour_autre" id="other-who">
+                  <option value="futurUtilisateur" selected>{{form_etat_futurUtilisateur}}</option>
+                  <option value="aidant">{{form_etat_autre_aidant}}</option>
+                  <option value="famille">{{form_etat_autre_famille}}</option>
+                  <option value="pro">{{form_etat_autre_pro}}</option>
+                  <option value="asso">{{form_etat_autre_asso}}</option>
+                </select>
+              </div>
+            </div>
+            <div class="field patient">
+              <label>{{form_attentes}}</label>
+              <div class="control"><input type="text" name="attentes"></div>
+            </div>
+            <div class="field patient">
+              <label>{{form_age}}</label>
+              <div class="control"><input type="number" name="age" min="0"></div>
+            </div>
+            <div class="field patient">
+              <label>{{form_telephone}}</label>
+              <div class="control"><input type="tel" name="telephone" class="required"></div>
+            </div>
+            <div class="field horaires">
+              <label>{{form_heureRappel}}</label>
+              <div class="control radio-button-group">
+                <label><input type="radio" name="horaires" value="matin" checked>{{form_heureRappel_matin}}</label>
+                <label><input type="radio" name="horaires" value="aprem">{{form_heureRappel_apresmidi}}</label>
+              </div>
+            </div>
+          </fieldset>
+          <div class="row">
+            <fieldset>
+
+              <h3>{{form_coord}}</h3>
+              <div class="field">
+                <label>{{form_coord_civ}}</label>
+                <div class="control radio-button-group">
+                  <label><input type="radio" name="civilite" value="monsieur" checked>{{form_coord_civ_m}}</label>
+                  <label><input type="radio" name="civilite"
+                                value="madame">{{form_coord_civ_mme}}</label>
+                  <label><input type="radio" name="civilite"
+                                value="docteur">{{form_coord_civ_dr}}</label>
+                  <label><input type="radio" name="civilite" value="professeur">{{form_coord_civ_pr}}</label>
+                </div>
+              </div>
+              <div class="field">
+                <label>{{form_coord_civ_nom}} *</label>
+                <div class="control text"><input type="text" name="nom" required></div>
+              </div>
+              <div class="field">
+                <label>{{form_coord_civ_prenom}} *</label>
+                <div class="control text"><input type="text" name="prenom" required></div>
+              </div>
+              <div class="field">
+                <label>{{form_coord_raisonSociale}}<span>{{form_coord_raisonSociale_siApplicable}}</span></label>
+                <div class="control text"><input type="text" name="raison_sociale"></div>
+              </div>
+              <div class="field">
+                <label>{{form_coord_email}}<span></span></label>
+                <div class="control text"><input type="email" name="email"></div>
+              </div>
+            </fieldset>
+            <div class="spacer"></div>
+            <fieldset>
+              <h3>{{form_adresse}}</h3>
+              <div class="field">
+                <label>{{form_coord_adresse_ligne}} *</label>
+                <div class="control text"><input type="text" name="adresse_1" required></div>
+              </div>
+              <div class="field">
+                <label></label>
+                <div class="control text"><input type="text" name="adresse_2"></div>
+              </div>
+              <div class="field">
+                <label>{{form_adresse_cp}} *</label>
+                <div class="control city"><input type="text" name="code_postal" required></div>
+              </div>
+              <div class="field">
+                <label>{{form_adresse_ville}} *</label>
+                <div class="control city"><input type="text" name="ville" required></div>
+              </div>
+              <div class="field">
+                <label>{{form_adresse_pays}} *</label>
+                <div class="control country"><input type="text" name="pays" required
+                                                    value="{{form_adresse_pays_defaut}}"></div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <h3>Votre message</h3>
+              <div class="field">
+                <textarea name="message"></textarea>
+              </div>
+            </fieldset>
+          </div>
+          <p class="end">
+            <button class="order try">{{form_envoyer}}</button>
+          </p>
+        </form>
+      </div>
+
+    </aside>
+  </div>
 </section>
 <section id="soutiens" class="partners">
-    <div>
-        <h1>{{partenaires_soutiens}}</h1>
-        <div class="soutiens items">
-            <a href="{{soutiens_1_url}}">
-                <article>
-                    <div><img src="{{soutiens_1_image}}" alt="{{soutiens_1_alt}}"/></div>
-                    <span>{{soutiens_1_titre}}</span>
-                </article>
-            </a>
-            <a href="{{soutiens_2_url}}">
-                <article>
-                    <div><img src="{{soutiens_2_image}}" alt="{{soutiens_2_alt}}"/></div>
-                    <span>{{soutiens_2_titre}}</span>
-                </article>
-            </a>
-            <a href="{{soutiens_3_url}}">
-                <article>
-                    <div><img src="{{soutiens_3_image}}" alt="{{soutiens_3_alt}}"/></div>
-                    <span>{{soutiens_3_titre}}</span>
-                </article>
-            </a>
-            <a href="{{soutiens_4_url}}">
-                <article>
-                    <div><img src="{{soutiens_4_image}}" alt="{{soutiens_4_alt}}"/></div>
-                    <span>{{soutiens_4_titre}}</span>
-                </article>
-            </a>
-            <a href="{{soutiens_5_url}}">
-                <article>
-                    <div><img src="{{soutiens_5_image}}" alt="{{soutiens_5_alt}}"/></div>
-                    <span>{{soutiens_5_titre}}</span>
-                </article>
-            </a>
-            <a href="{{soutiens_6_url}}">
-                <article>
-                    <div><img src="{{soutiens_6_image}}" alt="{{soutiens_6_alt}}"/></div>
-                    <span>{{soutiens_6_titre}}</span>
-                </article>
-            </a>
+  <div>
+    <h1>{{partenaires_soutiens}}</h1>
+    <div class="soutiens items">
+      <a href="{{soutiens_1_url}}" target="_blank">
+        <article>
+          <div><img src="{{soutiens_1_image}}" alt="{{soutiens_1_alt}}"/></div>
+          <span>{{soutiens_1_titre}}</span>
+        </article>
+      </a>
+      <a href="{{soutiens_2_url}}" target="_blank">
+        <article>
+          <div><img src="{{soutiens_2_image}}" alt="{{soutiens_2_alt}}"/></div>
+          <span>{{soutiens_2_titre}}</span>
+        </article>
+      </a>
+      <a href="{{soutiens_3_url}}" target="_blank">
+        <article>
+          <div><img src="{{soutiens_3_image}}" alt="{{soutiens_3_alt}}"/></div>
+          <span>{{soutiens_3_titre}}</span>
+        </article>
+      </a>
+      <a href="{{soutiens_4_url}}" target="_blank">
+        <article>
+          <div><img src="{{soutiens_4_image}}" alt="{{soutiens_4_alt}}"/></div>
+          <span>{{soutiens_4_titre}}</span>
+        </article>
+      </a>
+      <a href="{{soutiens_5_url}}" target="_blank">
+        <article>
+          <div><img src="{{soutiens_5_image}}" alt="{{soutiens_5_alt}}"/></div>
+          <span>{{soutiens_5_titre}}</span>
+        </article>
+      </a>
+      <a href="{{soutiens_6_url}}" target="_blank">
+        <article>
+          <div><img src="{{soutiens_6_image}}" alt="{{soutiens_6_alt}}"/></div>
+          <span>{{soutiens_6_titre}}</span>
+        </article>
+      </a>
 
-            <a href="{{soutiens_7_url}}">
-                <article>
-                    <div><img src="{{soutiens_7_image}}" alt="{{soutiens_7_alt}}"/></div>
-                    <span>{{soutiens_7_titre}}</span>
-                </article>
-            </a>
-            <a href="{{soutiens_8_url}}">
-                <article>
-                    <div><img src="{{soutiens_8_image}}" alt="{{soutiens_8_alt}}"/></div>
-                    <span>{{soutiens_8_titre}}</span>
-                </article>
-            </a>
-            <a href="{{soutiens_9_url}}">
-                <article>
-                    <div><img src="{{soutiens_9_image}}" alt="{{soutiens_9_alt}}"/></div>
-                    <span>{{soutiens_9_titre}}</span>
-                </article>
-            </a>
-        </div>
+      <a href="{{soutiens_7_url}}" target="_blank">
+        <article>
+          <div><img src="{{soutiens_7_image}}" alt="{{soutiens_7_alt}}"/></div>
+          <span>{{soutiens_7_titre}}</span>
+        </article>
+      </a>
+      <a href="{{soutiens_8_url}}" target="_blank">
+        <article>
+          <div><img src="{{soutiens_8_image}}" alt="{{soutiens_8_alt}}"/></div>
+          <span>{{soutiens_8_titre}}</span>
+        </article>
+      </a>
+      <a href="{{soutiens_9_url}}" target="_blank">
+        <article>
+          <div><img src="{{soutiens_9_image}}" alt="{{soutiens_9_alt}}"/></div>
+          <span>{{soutiens_9_titre}}</span>
+        </article>
+      </a>
     </div>
+  </div>
 </section>
 <footer class="main">
-    <nav>
-        <ul>
-            <li><a href="{{footer_quiSommesNous_url}}">{{footer_quiSommesNous}}</a></li>
-            <li><a href="{{footer_mentionsLegales_url}}">{{footer_mentionsLegales}}</a></li>
-            <li><a href="{{footer_CGV_url}}">{{footer_CGV}}</a></li>
-            <li><a href="{{footer_presse_url}}">{{footer_presse}}</a></li>
-            <li><a href="{{footer_documentation_url}}">{{footer_documentation}}</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="{{footer_quiSommesNous_url}}" target="_blank">{{footer_quiSommesNous}}</a></li>
+      <li><a href="{{footer_mentionsLegales_url}}" target="_blank">{{footer_mentionsLegales}}</a></li>
+      <li><a href="{{footer_CGV_url}}" target="_blank">{{footer_CGV}}</a></li>
+      <li><a href="{{footer_presse_url}}" target="_blank">{{footer_presse}}</a></li>
+      <li><a href="{{footer_documentation_url}}" target="_blank">{{footer_documentation}}</a></li>
+    </ul>
+  </nav>
 
-    <div class="madeby">
-        <p class="legend">{{footer_madeby_intro}}</p>
-        <p><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-BJEP1PGiZ.png" alt="Resilient Innovation"/></p>
-    </div>
+  <div class="madeby">
+    <p class="legend">{{footer_madeby_intro}}</p>
+    <p><img src="https://campsi.imgix.net/56261291c0e9425a0b9404d8-BJEP1PGiZ.png" alt="Resilient Innovation"/></p>
+  </div>
 
-    <div class="contact">
-        <address>
-            <p>710 rue Favre de Saint-Castor</p>
-            <p>34 080 MONTPELLIER France</p>
-            <p>09 77 55 82 02</p>
-        </address>
-    </div>
+  <div class="contact">
+    <address>
+      <p>710 rue Favre de Saint-Castor</p>
+      <p>34 080 MONTPELLIER France</p>
+      <p>09 77 55 82 02</p>
+    </address>
+  </div>
 
-    <div class="social">
-        <a href="https://www.facebook.com/ResilientInnovationFr">Facebook</a>
-        <a href="https://twitter.com/resilient_innov?lang=fr">Twitter</a>
-        <a href="http://www.scoop.it/u/resilient-innovation">Scoop It</a>
-    </div>
+  <div class="social">
+    <a href="https://www.facebook.com/ResilientInnovationFr" target="_blank">Facebook</a>
+    <a href="https://twitter.com/resilient_innov?lang=fr" target="_blank">Twitter</a>
+    <a href="http://www.scoop.it/u/resilient-innovation" target="_blank">Scoop It</a>
+  </div>
 </footer>
 <script src="bundle.js"></script>
 <noscript>
-    <img height="1" width="1" src="https://www.facebook.com/tr?id=1795402577382050&ev=PageView&noscript=1"/>
+  <img height="1" width="1" src="https://www.facebook.com/tr?id=1795402577382050&ev=PageView&noscript=1"/>
 </noscript>
+<script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){
+        z._.push(c)},$=z.s=
+        d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+        $.src='https://v2.zopim.com/?SZnyaVc9ZFkCQVU4367NoiJNqjKAKAd2';z.t=+new Date;$.
+            type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
 </body>
 </html>

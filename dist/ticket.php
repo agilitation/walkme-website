@@ -21,7 +21,7 @@ $_POST[age] ans
 
 Objet de la demande : $_POST[objet]
 Pour : $_POST[pour] ($_POST[pour_autre])
-Trouble : $_POST[trouble]
+Attentes : $_POST[trouble]
 Horaires de rappel : $_POST[horaires]
  
 Adresse :
@@ -29,8 +29,8 @@ $_POST[adresse_1]
 $_POST[adresse_2]
 $_POST[code_postal] $_POST[ville] $_POST[pays]
 
-===JSON===
-$json
+Message :
+$_POST[message]
 ";
 
 try {

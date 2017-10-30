@@ -147,7 +147,7 @@ init();
     m.parentNode.insertBefore(a, m)
 })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-ga('create', 'UA-88974858-1', 'auto');
+ga('create', 'UA-88974858-2', 'auto');
 ga('send', 'pageview');
 
 
@@ -214,3 +214,14 @@ function onPlayerReady(event) {
 fbq('init', '1795402577382050');
 fbq('track', 'PageView');
 
+/**
+ Hotjar
+ **/
+(function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:654555,hjsv:6};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');

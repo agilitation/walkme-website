@@ -2,3 +2,4 @@
 node_modules
 credentials.php
 build/*
+config/production.js

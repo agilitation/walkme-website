@@ -31,13 +31,13 @@ $('.try form').validate({
     submitHandler: function (form, event) {
 
         $.ajax({
-            url: "/ticket.php",
+            url: "http://walkme.agilitation.fr/ticket.php",
             data: $(form).serializeArray(),
             dataType: 'json',
-            method: 'post',
-            success: function () {
-                alert('message bien envoyé');
-            }
+            method: 'post'
+        }).always(function(data){
+            console.log(data);
+            $('#form-success').show();
         });
         return false;
     }
@@ -173,12 +173,12 @@ function onYouTubePlayerAPIReady() {
     player = new YT.Player('video-embed', {
         height: '416',
         width: '740',
-        videoId: 'sVbtKRjkcHI',
+        videoId: window.translations.VIDEO_ID,
         playerVars: {
             autoplay: 1,
             controls: 0,
             disablekb: 0,
-            hl: '{{page_locale}}',
+            hl: window.translations.PAGE_LOCALE,
             loop: 1,
             modestbranding: 1,
             showinfo: 0,

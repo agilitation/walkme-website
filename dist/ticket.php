@@ -20,10 +20,11 @@ $_POST[civilite] $_POST[prenom] $_POST[nom]
 $_POST[age] ans
 
 Objet de la demande : $_POST[objet]
-Pour : $_POST[pour] ($_POST[pour_autre])
-Attentes : $_POST[trouble]
+Pour : $_POST[pour_autre]
+Attentes : $_POST[attentes]
 Horaires de rappel : $_POST[horaires]
- 
+Telephone : $_POST[telephone]
+
 Adresse :
 $_POST[adresse_1]
 $_POST[adresse_2]
@@ -40,11 +41,17 @@ try {
         "description" => $message,
     ]);
 } catch (Exception $exc) {
+
+$from = "$_POST[prenom] $_POST[prenom] <$_POST[email]>";
+$headers = "Content-type:text/plain;charset=utf-8\r\n";
+$headers .= 'From: ' . $from . "\r\n";
+
+
     mail(
         "support@resilient-innovation.zendesk.com",
-        "[$_POST[objet]] Demande site internet",
+        "Demande site internet",
         $message,
-        "Content-type:text/plain;charset=utf-8"
+        $headers
     );
 }
 

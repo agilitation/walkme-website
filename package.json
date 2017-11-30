@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/agilitation/walkme-website#readme",
   "dependencies": {
+    "config": "^1.28.1",
     "d3-dsv": "^1.0.7",
+    "ftp-client": "^0.2.2",
     "gulp": "latest",
     "gulp-concat": "^2.6.1",
     "gulp-replace": "latest",
